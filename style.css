@@ -171,12 +171,12 @@ p{
     right:0%;
     left:0%;
     z-index:-1;
-    background:linear-gradient(160deg,rgb(18, 8, 109) 55%,white 0%);
+    background:linear-gradient(160deg,rgb(2, 1, 15) 55%,white 0%);
 }
 
 .staff-header{
     font-weight:bold;
-    color:yellow;
+    color:white;
     font-size:50px;
     font-family:gabriola,Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -193,7 +193,7 @@ p{
 
 .box img{
     border-radius:50%;
-    border-color:maroon;
+    border-color:white;
 }
 
 /* contact css */
@@ -214,15 +214,15 @@ p{
     bottom:0;
     right:0;
     z-index:-1;
-    background:linear-gradient(330deg, rgb(25, 230, 185) 55%,white 0%);
+    background:linear-gradient(330deg, rgb(3, 20, 17) 55%,white 0%);
 }
 
 .form-button button{
-    border:1px solid rgb(25, 230, 185);
+    border:1px solid rgb(3, 20, 17);
     border-radius: 50px;
     margin:0 5px;
     outline:none;
-    color:rgb(25, 230, 185);
+    color:rgb(3, 20, 17);
     background:transparent;
     outline:none;
 
