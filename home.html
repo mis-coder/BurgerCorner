@@ -4,6 +4,7 @@
         <title>Burger Corner</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="UTF-8"> 
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="style.css">        
        </head>
@@ -230,11 +231,35 @@
                 </form>
                </div>
             </div>
+            <div class="scrolltop float-right">
+            <i class="fa fa-arrow-up" onclick="topFunction()" id = "myBtn"></i>
+              </div>
           </section>
         <!-- contact section ends -->
 
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
                 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+                <script>
+                  // function to scroll up to the top of the page
+                function topFunction(){
+                  document.documentElement.scrollTop=0;
+                }
+                // get the scroll button
+                MyButton = document.getElementById("myBtn");
+
+                // function to not display the button when its with in 20px from top
+                window.onscroll = function(){
+                  scrollFunction();
+                }
+
+                // the scroll function
+                function scrollFunction(){
+                if(document.documentElement.scrollTop > 50)
+                  MyButton.style.display="block";
+                else
+                  MyButton.style.display="none";
+                }
+                  </script>
        </body>
     </html>
